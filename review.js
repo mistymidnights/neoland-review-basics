@@ -10,32 +10,18 @@ const movies = [
     {title: 'El gato con guantes', duration: 111, categories: ['comedia', 'aventura', 'animación']},
 ]
 
-const acc = [];
+let acc = [];
+let noRepetidos = [];
 for (const films of movies) {
-    movies.forEach((element) => {
-        filmsCategories = films.categories;
-    });
-    console.log(filmsCategories);
-}
-console.log(filmsCategories.includes("comedia"));
-//TODO NO HE CONSEGUIDO QUITAR LOS DUPLICADOS
-
-
-
-
-/* **Iteración #4: Métodos findArrayIndex**
-Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y 
-devuelve la posición del array cuando el valor del array sea igual al valor del texto que enviaste como parametro. 
-Haz varios ejemplos y compruebalos. */
-
-//TODO
-const animals = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
-
-const findArrayIndex = (array, text) =>{
-    for (let index = 0; index < animals.length; index++) {
-        const element = animals[index];
-        if (text === 'string') {
-            console.log(animals[index]);
+    for (const key in films) {
+        films["categories"].forEach((categoria) => {
+            acc.push(categoria);
+        });
         }
     }
-}
+
+acc.forEach((element) => {
+    if (!noRepetidos.includes(element))
+    noRepetidos.push(element);
+});
+console.log(noRepetidos)
