@@ -14,3 +14,9 @@ Dado el siguiente javascript usa forof y forin para hacer la media del volumen d
 //Una vez accedas a ellos piensa en la mejor forma de hacer un conteo de cada vez que ese sonido se repita como favorito en cada usuario.
 //Este ejercicio es un poco complicado con los conocimientos actuales pero...a la vez un buen reto y oportunidad para comprender que hay 
 //muchas formas de hacer las cosas en javascript.
+
+
+/* **Iteración #4: Métodos findArrayIndex**
+Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y 
+devuelve la posición del array cuando el valor del array sea igual al valor del texto que enviaste como parametro. 
+Haz varios ejemplos y compruebalos. (buscador) */

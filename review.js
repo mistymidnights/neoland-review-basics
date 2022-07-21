@@ -115,3 +115,29 @@ console.log(accDatos)
 for (let index = 0; index < accDatos.length; index++) {
     console.log("Para el numero " + numNoRepetidos[index] + " las veces que se repite " + accDatos[index])
 }
+
+
+/* **Iteración #4: Métodos findArrayIndex**
+Crea una función llamada `findArrayIndex` que reciba como parametros un array de textos y un texto y 
+devuelve la posición del array cuando el valor del array sea igual al valor del texto que enviaste como parametro. 
+Haz varios ejemplos y compruebalos. (buscador) */
+
+//TODO
+const animals = ['Caracol', 'Mosquito', 'Salamandra', 'Ajolote'];
+
+/* const findArrayIndex = (array, text) =>{
+    for (let index = 0; index < animals.length; index++) {
+        const element = animals[index];
+        if (text === 'string') {
+            console.log(animals[index]);
+        }
+    }
+} */
+
+const findArrayIndex = (array, text) => {
+    array.forEach((element, index) => {
+        if (element == text)
+        console.log("La palabra introducida " + text + "se encuentra en la posicion " + index)
+    });
+}
+findArrayIndex(animals, 'Mosquito')
